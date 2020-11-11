@@ -1,0 +1,23 @@
+secretGenerator:
+- name: ssh
+  literals:
+  - username=seolim
+  - password=12345678
+- name: mysql
+  literals:
+  - username=root
+  - password=1111
+- name: ftps
+  literals:
+  - username=seolim
+  - password=1111
+
+resources:
+- nginx.yaml
+- ftps.yaml
+- mysql.yaml
+- wordpress.yaml
+- phpMyAdmin.yaml
+- influxdb.yaml
+- telegraf.yaml
+- grafana.yaml
